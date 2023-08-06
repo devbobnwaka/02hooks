@@ -1,9 +1,14 @@
+import User from './components2/user';
+import { MyProvider } from './context';
+
+
 const App = () =>{
 
     return(
         <>
-            <h1>Form:</h1>
-            
+            <MyProvider>
+                <User />
+            </MyProvider>
         </>
     )
 }
